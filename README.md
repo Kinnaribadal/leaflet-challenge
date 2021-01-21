@@ -8,11 +8,8 @@ Kinnari Patel- Leaflet Challenge
 2. **Import & Visualize the Data**
 
   This was easy it was one of the lessons i just had to change marker to circle you can see it as logic1.js
-  
-### Level 2: More Data
 
-![5-Advanced](Images/5-Advanced.png)
-
+3. **Level 2: More Data Advanced ploting**
 
 
 I did the following
