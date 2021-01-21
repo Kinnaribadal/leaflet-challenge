@@ -14,23 +14,70 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 
 <body>
   <h2>Leaflet Challenge-Kinnari Patel</h2>
+  <!-- Nav Bar -->
+
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="static/js/logic1.js">Basic Map</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="static/js/logic.js">Advance Map</a>
-      </li>
-    </ul>
-  </nav>
-   
-    
+      <!-- Brand -->
+      <ul>
+        <li>
+          <a class="navbar-brand" href="Logic1.html"><font size="+3">Basic Map</font></a>
+          <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </li>
+        <li>
+          <a class="navbar-brand" href="Logic.html"><font size="+3">Advanced Map</font></a>
+          <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </li>
+        <li>
+          <a class="navbar-brand" href=""><font size="+0">
+            Kinnari Patel- Leaflet Challenge
+            <p>
+              1. **Get your data set**
+              
+                I got data and saved it as earthquake.json
+              
+            </p> 
+            <p>
+              2. **Import & Visualize the Data**
+              
+                This was easy it was one of the lessons i just had to change marker to circle you can see it as logic1.js
+            </p>
+            <p>
+              3. **Level 2: More Data Advanced ploting**
+              
+              I did the following saved as logic.js
+              
+              * Ploted a second data set on our map.
+            </p>
+            <p>
+              * Added a number of base maps to choose from as well as separate out our two different data sets into overlays that can be turned on and off independently.
+            </p>
+            <p>  
+              * Added layer controls to our map.
+            </p>
+            
+            </font></a>
+          <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        </li>
+      </ul>
+    </nav>  
   <!-- The div where we will inject our map -->
   <div id="map"></div>
 
@@ -46,7 +93,10 @@
   <script type="text/javascript" src="static/js/config.js"></script>
   <!-- JS --
   <script type="text/javascript" src="static/js/logic1.js"></script>-->
-
+  <footer>
+    <p>Author: Kinnari Patel<br>
+    <a href="mailto:kinnaribadal@gmail.com">kinnaribadal@gmail.com</a></p>
+  </footer>
 </body>
 
 </html>
