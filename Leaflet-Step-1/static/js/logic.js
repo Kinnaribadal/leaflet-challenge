@@ -61,7 +61,7 @@ function markerSize(feature) {
   // Store API endpoint as queryUrl
   var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
   
-  var platesPath = "GeoJSON/PB2002_boundaries.json";
+  var platesPath = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
   
   // Perform a GET request to the query URL
   d3.json(queryUrl, function(data) {
@@ -97,7 +97,7 @@ function markerSize(feature) {
   
             // Tectonic plates layer
       var platesStyle = {
-          "color": "white",
+          "color": "orange",
           "weight": 2,
           "opacity": 1,
           fillOpacity: 0,
