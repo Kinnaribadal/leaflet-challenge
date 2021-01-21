@@ -1,0 +1,221 @@
+{
+    "type": "FeatureCollection",
+    "metadata": {
+        "generated": 1611184317000,
+        "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson",
+        "title": "USGS Significant Earthquakes, Past Week",
+        "status": 200,
+        "api": "1.10.3",
+        "count": 5
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.4,
+                "place": "27 km SW of Pocito, Argentina",
+                "time": 1611024382380,
+                "updated": 1611155177021,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000d18q",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000d18q.geojson",
+                "felt": 764,
+                "cdi": 6.2,
+                "mmi": 7.157,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 1,
+                "sig": 1124,
+                "net": "us",
+                "code": "7000d18q",
+                "ids": ",at00qn5ud7,pt21019000,us7000d18q,",
+                "sources": ",at,pt,us,",
+                "types": ",dyfi,ground-failure,impact-link,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": null,
+                "dmin": 0.299,
+                "rms": 0.99,
+                "gap": 21,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.4 - 27 km SW of Pocito, Argentina"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -68.8182,
+                    -31.8232,
+                    20
+                ]
+            },
+            "id": "us7000d18q"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 4.2,
+                "place": "4km SE of Aromas, CA",
+                "time": 1610856087110,
+                "updated": 1611177358088,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73512355",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73512355.geojson",
+                "felt": 19880,
+                "cdi": 4.6,
+                "mmi": 6.03,
+                "alert": "green",
+                "status": "reviewed",
+                "tsunami": 1,
+                "sig": 731,
+                "net": "nc",
+                "code": "73512355",
+                "ids": ",ew1610856087,at00qn28id,nc73512355,us7000d0sg,",
+                "sources": ",ew,at,nc,us,",
+                "types": ",dyfi,focal-mechanism,impact-link,losspager,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shake-alert,shakemap,",
+                "nst": 153,
+                "dmin": 0.03114,
+                "rms": 0.14,
+                "gap": 27,
+                "magType": "mw",
+                "type": "earthquake",
+                "title": "M 4.2 - 4km SE of Aromas, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6105,
+                    36.8673333,
+                    8.32
+                ]
+            },
+            "id": "nc73512355"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 5.5,
+                "place": "50 km NE of Bandar-e Lengeh, Iran",
+                "time": 1610746264610,
+                "updated": 1610832927727,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000d0gn",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000d0gn.geojson",
+                "felt": 41,
+                "cdi": 4.9,
+                "mmi": 6.933,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 670,
+                "net": "us",
+                "code": "7000d0gn",
+                "ids": ",us7000d0gn,",
+                "sources": ",us,",
+                "types": ",dyfi,losspager,moment-tensor,origin,phase-data,shakemap,",
+                "nst": null,
+                "dmin": 2.175,
+                "rms": 1.07,
+                "gap": 35,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 5.5 - 50 km NE of Bandar-e Lengeh, Iran"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    55.1859,
+                    26.9258,
+                    8
+                ]
+            },
+            "id": "us7000d0gn"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 3.63,
+                "place": "2km W of Concord, CA",
+                "time": 1610651890680,
+                "updated": 1611158419421,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73510910",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73510910.geojson",
+                "felt": 5093,
+                "cdi": 4.3,
+                "mmi": 4.28,
+                "alert": null,
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 633,
+                "net": "nc",
+                "code": "73510910",
+                "ids": ",nc73510910,us7000d03i,",
+                "sources": ",nc,us,",
+                "types": ",dyfi,focal-mechanism,moment-tensor,nearby-cities,origin,phase-data,scitech-link,shakemap,",
+                "nst": 199,
+                "dmin": 0.002813,
+                "rms": 0.19,
+                "gap": 29,
+                "magType": "mw",
+                "type": "earthquake",
+                "title": "M 3.6 - 2km W of Concord, CA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0406667,
+                    37.9708333,
+                    15.24
+                ]
+            },
+            "id": "nc73510910"
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "mag": 6.2,
+                "place": "32 km S of Mamuju, Indonesia",
+                "time": 1610648898364,
+                "updated": 1610822045259,
+                "tz": null,
+                "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000d030",
+                "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000d030.geojson",
+                "felt": 12,
+                "cdi": 8.7,
+                "mmi": 7.718,
+                "alert": "yellow",
+                "status": "reviewed",
+                "tsunami": 0,
+                "sig": 600,
+                "net": "us",
+                "code": "7000d030",
+                "ids": ",us7000d030,",
+                "sources": ",us,",
+                "types": ",dyfi,general-text,ground-failure,impact-text,losspager,moment-tensor,origin,phase-data,shakemap,significance,",
+                "nst": null,
+                "dmin": 2.195,
+                "rms": 1.21,
+                "gap": 28,
+                "magType": "mww",
+                "type": "earthquake",
+                "title": "M 6.2 - 32 km S of Mamuju, Indonesia"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.9009,
+                    -2.976,
+                    18
+                ]
+            },
+            "id": "us7000d030"
+        }
+    ],
+    "bbox": [
+        -122.0406667,
+        -31.8232,
+        8,
+        118.9009,
+        37.9708333,
+        20
+    ]
+}
