@@ -62,29 +62,56 @@ var map = L.map("map", {
       }
     }).addTo(map);
    
-    var legend = L.control({
-      position: "bottomleft"
-    })
-    legend.onAdd = function(){
-      var div = L.DomUtil.create("div", "info legend");
+  //   var legend = L.control({
+  //     position: "bottomleft"
+  //   })
+  //   legend.onAdd = function(){
+  //     var div = L.DomUtil.create("div", "info legend");
   
-     var grades = [0, 1, 2, 3, 4, 5];
-     var colors = [
-       "#98ee00",
-       "#d4ee00",
-       "#eecc00",
-       "#ee9c00",
-       "#ea822c",
-       "#ea2c2c"
-     ];
+  //    var grades = [0, 1, 2, 3, 4, 5];
+  //    var colors = [
+  //      "#98ee00",
+  //      "#d4ee00",
+  //      "#eecc00",
+  //      "#ee9c00",
+  //      "#ea822c",
+  //      "#ea2c2c"
+  //    ];
   
-     // Looping through our intervals to generate a label with a colored square for each interval.
-     for (var i = 0; i < grades.length; i++) {
-       div.innerHTML +=
-         "<i style='background: " + colors[i] + "></i> " +
-         grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
-     }
-     return div;
-    };
-    legend.addTo(map);
-  })
+  //    // Looping through our intervals to generate a label with a colored square for each interval.
+  //    for (var i = 0; i < grades.length; i++) {
+  //      div.innerHTML +=
+  //        "<i style='background: " + colors[i] + "></i> " +
+  //        grades[i] + (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
+  //    }
+  //    return div;
+  //   };
+  //   legend.addTo(map);
+  // })
+  var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend');
+        var grades = [0, 1, 2, 3, 4, 5];
+        var colors = [
+               "#98ee00",
+               "#d4ee00",
+               "#eecc00",
+               "#ee9c00",
+               "#ea822c",
+               "#ea2c2c"
+             ];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + colors[i] + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
+  });

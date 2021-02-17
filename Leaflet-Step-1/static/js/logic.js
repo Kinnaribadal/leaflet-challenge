@@ -124,30 +124,55 @@ function markerSize(feature) {
           collapsed: false
         }).addTo(map);
     
-        // Setting up the legend
-        var legend = L.control({ position: "bottomright" });
-        legend.onAdd = function() {
-          var div = L.DomUtil.create("div", "info legend");
-          var limits = ["0-1", "1-2", "2-3", "3-4", "4-5", "5+"];
-          var labelsColor = [];
-          var labelsText = [];
+        // // Setting up the legend
+        // var legend = L.control({ position: "bottomright" });
+        // legend.onAdd = function() {
+        //   var div = L.DomUtil.create("div", "info legend");
+        //   var limits = ["0-1", "1-2", "2-3", "3-4", "4-5", "5+"];
+        //   var labelsColor = [];
+        //   var labelsText = [];
     
-          // Add min & max
-          limits.forEach(function(limit, index) {
-            labelsColor.push(`<li style="background-color: ${colors[index]};"></li>`); // <span class="legend-label">${limits[index]}</span>
-            labelsText.push(`<span class="legend-label">${limits[index]}</span>`)
-          });
+        //   // Add min & max
+        //   limits.forEach(function(limit, index) {
+        //     labelsColor.push(`<li style="background-color: ${colors[index]};"></li>`); // <span class="legend-label">${limits[index]}</span>
+        //     labelsText.push(`<span class="legend-label">${limits[index]}</span>`)
+        //   });
     
-          var labelsColorHtml =  "<ul>" + labelsColor.join("") + "</ul>";
-          var labelsTextHtml = `<div id="labels-text">${labelsText.join("<br>")}</div>`;
+        //   var labelsColorHtml =  "<ul>" + labelsColor.join("") + "</ul>";
+        //   var labelsTextHtml = `<div id="labels-text">${labelsText.join("<br>")}</div>`;
     
-          var legendInfo = "<h4>Earthquake<br>Magnitude</h4>" +
-            "<div class=\"labels\">" + labelsColorHtml + labelsTextHtml
-            "</div>";
-          div.innerHTML = legendInfo;
+        //   var legendInfo = "<h4>Earthquake<br>Magnitude</h4>" +
+        //     "<div class=\"labels\">" + labelsColorHtml + labelsTextHtml
+        //     "</div>";
+        //   div.innerHTML = legendInfo;
     
-          return div;
+        //   return div;
+        // };
+        var legend = L.control({position: 'bottomright'});
+
+        legend.onAdd = function (map) {
+        
+            var div = L.DomUtil.create('div', 'info legend');
+                var grades = [0, 1, 2, 3, 4, 5];
+                var colors = [
+                       "#98ee00",
+                       "#d4ee00",
+                       "#eecc00",
+                       "#ee9c00",
+                       "#ea822c",
+                       "#ea2c2c"
+                     ];
+        
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + colors[i] + '"></i> ' +
+                    grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            }
+        
+            return div;
         };
+        
     
         // Adding legend to the map
         legend.addTo(map);
