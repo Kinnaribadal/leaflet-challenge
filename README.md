@@ -12,7 +12,7 @@ Kinnari Patel- Leaflet Challenge
 3. **Level 2: More Data Advanced ploting**
 
 
-I did the following saved as logic.js
+I did the following saved as leaflet_adv.js
 
 * Ploted a second data set on our map.
 
